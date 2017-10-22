@@ -6,27 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    
+    <link href="reset.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+        
+        <link href="style.css" type="text/css" rel="stylesheet">
 
     <style>
-        /* * {
-            border: 1px solid rgb(218, 217, 217);
-        } */
-
-        body {
-            background-color: rgb(252, 244, 233);
-        }
-
-        .headline{
-            background-color: rgba(255, 0, 0, 0.5);
-            color: whitesmoke;
-            border-radius: 10px;
-        }
-        .about-head {
-            padding-bottom: 20px;
-        }
-
     </style>
 
 </head>
@@ -36,8 +23,9 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">WebSiteName</a>
+                <a class="navbar-brand" href="#">Jason Farthing</a>
             </div>
+
             <ul class="nav navbar-nav pull-right">
                 <li class="active">
                     <a href="#">Home</a>
@@ -48,51 +36,104 @@
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
-
             </ul>
+
+        </div>
+
         </div>
     </nav>
 
     <!-- /* containers for body */ -->
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="container headline">
-                    <div class="row">
-                        <div class="col-md-12 about-head">
-                            <h1>All about me...well, not quite.</h1>
-                        </div>
 
+        <div class="row">
+            <div class="col-md-6 col-sm-6 about-block">
+                <div class="row row1">
+                    <div class="col-md-12 col-sm-12 about-head">
+                        <h1>About me</h1>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row row2">
                     <div class="col-md-4 headshot">
-
-
-                        <h2>Image</h2>
-                        <p>The .img-responsive class makes the image scale nicely to the parent element (resize the browser
-                            window to see the effect):</p>
-                        <img class="img-responsive" src="img_chania.jpg" alt="Chania" width="460" height="345">
+                        <br>
+                        <img class="img-responsive img-circle head-shot" src="images/jasonheadshot200px.jpg" alt="Jason Farthing Headshot" width="200"
+                            height="200">
+                        <br>
+                        <br>
                     </div>
                     <div class="col-md-8 about-text">
                         <blockquote>
-                            <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation
-                                organization, WWF works in 100 countries and is supported by 1.2 million members in the United
-                                States and close to 5 million globally.</p>
-                            <footer>From WWF's website</footer>
-                        </blockquote>
+                            <p>I like making instruments, cigar box guitars to be exact. I make the guitars that I play in my
+                                band, The Budrows. I ride a Harley Chopper with a sweet vintage gas tank that has a Hawaiian
+                                sunset scene on it.</p>
 
+                        </blockquote>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3 social">
-                <p>Testing row 3</p>
-            </div>
+            <!-- placeholder column -->
+            <div class="col-md-2">
 
+            </div>
+            <!-- placeholder column -->
+
+            <div class="col-md-4 social">
+                <div class="row row1">
+                    <h1>Feeling Social?</h1>
+                    <small id="small1">Let's connect.</small>
+                </div>
+                <div class="row4">
+                    <div class="col-sm-4">
+                        <a href="https://github.com/jasonfarthing" target="blank"><img class="img-responsive img-circle head-shot" src="images/githublogo.jpg" alt="GitHub Logo" width="200" height="200"></a>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://www.linkedin.com/in/jasonfarthing/" target="blank"><img class="img-responsive img-circle head-shot" src="images/linkedinlogo.jpg" alt="GitHub Logo" width="200" height="200"></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://stackoverflow.com/users/8760150/jasonfarthing" target="blank"><img class="img-responsive img-circle head-shot" src="images/stackoverflowlogo.jpg" alt="GitHub Logo" width="200" height="200"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <br>
+    <br>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="/action_page.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
 
 
 
