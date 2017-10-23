@@ -4,9 +4,13 @@
 
 body {
     background-image: url(images/reclaimedwoodbackground1000px.jpg);
-    
+    background-size: cover;
     font-family: Courier New, Courier, monospace;
     font-size: 16px;
+}
+
+.container{
+    padding-top: 100px;
 }
 
 /* .pull-right:hover{
@@ -52,4 +56,22 @@ p {
     font-size: 16px;
     padding-left: 15px;
     padding-bottom: 0;
+}
+.footer {
+    height: 100px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(172, 172, 172);
+    text-align: center;
+    padding-top: 40px;
+    
+}
+a {
+    color: grey;
+}
+.footer a:hover{
+    color: red;
 }
