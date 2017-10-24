@@ -16,14 +16,19 @@ body {
 /* .pull-right:hover{
     background: red;
 } */
-h1 {
+h1,
+h2, {
     line-height: auto;
     padding: 10px 0px 10px 10px;
 }
 p {
     color: white;
 }
- .row1{
+.img-description {
+    color: red;
+    text-decoration: none;
+}
+ .row1 {
     color: red;
     background: black;
     border-radius: 0px 40px 0px 0px;
@@ -38,6 +43,15 @@ p {
     /* line-height: autos;
     padding: 10px 0px 10px 10px; */
 }
+
+/* css for photo gallery */
+/* .row1{
+    color: red;
+    background: black;
+    border-radius: 0px 40px 0px 0px;
+    
+} */
+
 .row4 {
     padding-top: 50px;
 }
@@ -47,6 +61,12 @@ p {
     border-radius: 0px 50px 50px 50px;
 }
 .social{
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.575);
+    border-radius: 0px 40px 40px 40px;
+}
+
+.container1 {
     height: 300px;
     background-color: rgba(0, 0, 0, 0.575);
     border-radius: 0px 40px 40px 40px;
